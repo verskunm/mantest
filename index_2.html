@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html data-scrapbook-source="https://www.e-shop.gr/banners/central_side.phtml" data-scrapbook-create="20200505130305798">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+#slides {width:650px;height:300px;position:relative;}
+.slides_container {width:650px; height:300px;overflow:hidden;position:relative;display:none;}
+.slides_container a {width:650px; height:300px;display:block;}
+.slides_control {width:650px; left: inherit;}
+.pagination {margin:7px 0 0;float:right;list-style:none;}
+.pagination li {float: left;margin: 0 1px;}
+.pagination li a {display:block;width:13px;height:13px;background-image:url("pagination.png");background-position:0 0;float:left;overflow:hidden;}
+.pagination li.current a, .pagination li.current a:hover { background-position: 0 -13px; }
+.pagination li a:hover { background-position: 0 -26px }
+.slide {width:1300px; height:300px;display:block;text-align:center; margin: 0;}
+#slides, .slides_container, .slides_control, .slide { z-index: 0px !important; }
+ul.pagination { float: none; }
+div.slides_container { width:140px; height: 486px; }
+div.slide { height: 486px; width:140px; }
+#slides { height: 486px; width:140px; }
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script src="jquery.slides.min.js"></script>
+
+	<div id="slides">
+		<div class="slides_container" style="overflow: hidden; position: relative; display: block; background: url(&quot;circle_loader_16.gif&quot;) 50% 50% no-repeat;">
+						<div class="slides_control" style="position: relative; width: 420px; height: 486px; left: -140px;"><div class="slide" style="background: url(&quot;eshopspecials_200505.jpg&quot;) center center no-repeat; position: absolute; top: 0px; left: 140px; z-index: 0; display: none;">
+				<a class="slidelink" target="new" href="http://www.eshopspecials.gr/">
+					<img src="blank.gif" border="0" width="100%" height="486">
+				</a>
+			</div><div class="slide" style="background: url(&quot;right_newsletter.jpg&quot;) center center no-repeat; position: absolute; top: 0px; left: 140px; z-index: 0; display: none;">
+				<a class="slidelink" target="new" href="http://www.e-shop.gr/newsletter.phtml">
+					<img src="blank.gif" border="0" width="100%" height="486">
+				</a>
+			</div><div class="slide" style="background: url(&quot;forfans_side_2019.jpg&quot;) center center no-repeat; position: absolute; top: 0px; left: 140px; z-index: 5; display: block;">
+				<a class="slidelink" target="new" href="http://www.facebook.com/pages/E-SHOPGR/367346793378">
+					<img src="blank.gif" border="0" width="100%" height="486">
+				</a>
+			</div><div class="slide" style="background: url(&quot;right_crazy.jpg&quot;) center center no-repeat; position: absolute; top: 0px; left: 140px; z-index: 0; display: none;">
+				<a class="slidelink" target="new" href="http://www.crazysundays.gr/">
+					<img src="blank.gif" border="0" width="100%" height="486">
+				</a>
+			</div></div>
+						
+						
+						
+		</div>
+	<ul class="pagination"><li class=""><a href="#0">1</a></li><li class=""><a href="#1">2</a></li><li class="current"><a href="#2">3</a></li><li class=""><a href="#3">4</a></li></ul></div>
+
+
+<script>
+
+$('#slides').slides({        
+	container: 'slides_container',
+	preload: true,
+	next: 'slides_next',
+	prev: 'slides_prev',
+	generatePagination: true,
+	preloadImage: 'https://www.e-shop.gr/images/circle_loader_16.gif',
+	play: 10000,
+	pause: 2500,
+	hoverPause: true
+});
+
+</script>
+
+
+</body>
+</html>
